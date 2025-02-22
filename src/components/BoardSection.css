@@ -1,0 +1,125 @@
+.board-section {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: relative;
+    top: 21px;
+    width: 370px;
+    padding: 15px;
+}
+
+  /* Board Header */
+  .board-header {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    height: 24px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+  
+  /* Board List (Container for Items) */
+  ul.board-list.d-flex.row {
+    margin-left: 6px;
+    padding: 0px;
+}
+  
+  /* Board Item (3 columns with equal height & width) */
+  .board-item {
+    flex: 0 calc(33.33% - 10px);  /* ✅ Three columns */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    min-height: 120px; /* ✅ Ensures equal height */
+  }
+  
+  /* Equal height for all items */
+  .board-item:nth-child(1),
+  .board-item:nth-child(2),
+  .board-item:nth-child(3) {
+    height: 100px;
+    padding: 19px;
+    margin: 20px; /* ✅ Fixed height for all three */
+  }
+  
+  /* Board Info Section */
+  .board-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Board Task Name */
+  .board-task-name {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Board Task Date */
+  .board-task-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  /* Board Task Status */
+  .board-task-status {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  /* Status Colors */
+  .board-task-status.to-do {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .board-task-status.in-progress {
+    background-color: #d0eaff;
+    color: #0066cc;
+  }
+  
+  .board-task-status.completed {
+    background-color: #d4f8d4;
+    color: #008000;
+  }
+  
+  /* Board Task Category */
+  .board-task-category {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .board-item {
+      flex: 0 calc(50% - 10px);  /* ✅ Two columns for medium screens */
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .board-item {
+      flex: 0 100%;  /* ✅ Single column for small screens */
+      height: auto;
+    }
+  }
+  

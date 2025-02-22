@@ -1,0 +1,117 @@
+/* filterBoardCss.css */
+
+/* Container */
+.filter-board {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.search_Btn {
+    display: flex;
+}
+  /* Filter Row */
+  .filter-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .filter-label {
+   
+    font-size: 12px;
+    font-weight: 600;
+    color: #00000099;
+    margin-right: 10px;
+  }
+  
+  /* Dropdown Button */
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border: 1px solid #00000033;
+    border-radius: 60px;
+    background: transparent;
+    cursor: pointer;
+    
+    font-size: 12px;
+    font-weight: 600;
+    color: #00000099;
+    gap: 4px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 5px;
+    z-index: 1;
+  }
+  
+  .dropdown-menu div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Search Box */
+  .search-box {
+    display: flex;
+    align-items: center;
+    padding: 2px 7px;
+    border: 1px solid #0000006b;
+    border-radius: 60px;
+    /* width: 100%; */
+    height:28px;
+    /* max-width: 190px; */
+}
+  .search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+   
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000d1;
+    width: 100%;
+  }
+  
+  /* Add Task Button */
+  .add-task-btn {
+    background-color: #7b1984;
+    color: #ffffff;
+    padding: 9px 40px;
+    border-radius: 41px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 11px;
+}
+.search {
+    display: flex;
+}
+  
+  .add-task-btn:hover {
+    background-color: #5a1361;
+  }
+  
+  /* Selected Task */
+  .selected-task {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  

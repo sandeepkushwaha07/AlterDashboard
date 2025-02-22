@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 84px;
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  
+  align-items: center;
+  gap: 10px;
+}
+
+.task-icon {
+  width: 29px;
+  height: 29px;
+}
+
+.app-title {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #2f2f2f;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  padding-top: 9px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  padding-bottom: 10px;
+  background: none;
+}
+
+.tab span {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #231f20;
+  opacity: 0.8;
+}
+
+.tab.active span {
+  color: #000000;
+  opacity: 1;
+}
+
+.tab-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.active-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 47px;
+  height: 2px;
+  background: #000000;
+  border-radius: 2px;
+}
+
+.user-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border: 0.4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.username {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 15px;
+  background: #fff9f9;
+  border: 1px solid rgba(123, 25, 132, 0.15);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background: #fff0f0;
+}
+
+.logout-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.logout-button span {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs {
+    margin-top: 10px;
+  }
+
+  .user-section {
+    align-items: center;
+  }
+}

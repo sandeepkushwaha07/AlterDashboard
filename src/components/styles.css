@@ -1,0 +1,26 @@
+/* TaskListView styles */
+.task-list-view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Additional styles for layout matching */
+.header {
+  width: 100%;
+  max-width: 1339px;
+  margin-bottom: 20px;
+}
+
+.filter-search-add-task {
+  width: 100%;
+  max-width: 1334px;
+  margin-top: 20px;
+}
+
+/* Add more styles as needed to match the design */
+

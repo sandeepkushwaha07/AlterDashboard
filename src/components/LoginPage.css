@@ -1,0 +1,190 @@
+/* Full-Screen Layout */
+.loginpage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f7fc;
+  overflow: hidden;
+  flex-direction: column; /* Adjusts for smaller screens */
+}
+
+/* Circles Container (Left Side) */
+.circle-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+/* Responsive Circle Sizes */
+.circle1 {
+  width: 550px;
+  height: 550px;
+  top: 15px;
+  border: 2px solid #d982e1;
+}
+.circle2 {
+  width: 420px;
+  height: 420px;
+  /* background: rgba(123, 25, 132, 0.3); */
+  left: 64px;
+  top: 62px;
+  border: 2px solid #d982e1;
+}
+.circle3 {
+  width: 300px;
+  height: 300px;
+  /* background: rgba(123, 25, 132, 0.4); */
+  top: 63px;
+  left: 59px;
+  border: 2px solid #d982e1;
+}
+/* Login Box */
+.login-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  box-shadow: 4px 4px 35px 10px #e3cfe5;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+/* Login Content */
+.DatashowLogin {
+  width: 616px;
+  max-width: 526px;
+  height: 442px;
+  max-height: 394px;
+  /* padding: 20px; */
+  overflow: hidden;
+  position: absolute;
+  /* top: 73px; */
+}
+/* Google Button */
+.google-btn {
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  background-color: #d2a4d6;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 97%;
+  max-width: 320px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-btn:hover {
+  background-color: #357ae8;
+}
+
+/* Google Icon */
+.google-icon {
+  font-size: 22px;
+}
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .loginpage {
+    flex-direction: column;
+  }
+  .circle-container {
+    display: inline; /* Hide circles on smaller screens */
+  }
+  .DatashowLogin {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: none;
+}
+.circle1 {
+  width: 372px;
+  height: 361px;
+  /* background: rgba(123, 25, 132, 0.2); */
+  top: 69px;
+  border: 2px solid #671570;
+}
+
+.login-box {
+  position: absolute;
+  top: 53%;
+  transform: translateY(-50%);
+  left: 32px;
+  width: 267px;
+  box-shadow: 4px 4px 35px 10px #e3cfe5;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+.circle2 {
+  width: 300px;
+  height: 300px;
+  /* background: rgba(123, 25, 132, 0.3); */
+  left: 30px;
+  top: 35px;
+  border: 2px solid;
+}
+.circle3 {
+  width: 246px;
+  height: 228px;
+  /* background: rgba(123, 25, 132, 0.4); */
+  top: 42px;
+  left: 30px;
+  border: 1px solid;
+}
+.google-btn {
+  
+  font-size: 17px;
+  border-radius: 8px;
+  width: 100%;
+ 
+}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .login-box {
+    width: 269px;
+    position: absolute;
+    top: 92%;
+    transform: translateY(-50%);
+    left: 0px;
+    box-shadow: 4px 4px 35px 10px #e3cfe5;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .login-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 81px;
+    box-shadow: 4px 4px 35px 10px #e3cfe5;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+ 
+}

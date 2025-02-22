@@ -1,0 +1,142 @@
+/* Task Section Styling */
+.task-section {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  position: relative;
+  top: 21px;
+  width: 100%;
+}
+  /* Section Header */
+  .section-header {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    height: 34px;
+    font-size: 14px;
+}
+
+  
+  /* Task List */
+  .task-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Task Item */
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Task Info Section */
+  .task-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .task-name {
+    font-weight: 500;
+    flex: 1; /* Takes necessary space */
+  }
+  
+  /* Align Left */
+  .task-date {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    flex: 1;
+  }
+  
+  /* Center Alignment */
+  .task-status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  /* Status Colors */
+  .task-status.to-do {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .task-status.in-progress {
+    background-color: #d0eaff;
+    color: #0066cc;
+  }
+  
+  .task-status.completed {
+    background-color: #d4f8d4;
+    color: #008000;
+  }
+  
+  /* Align Right */
+  .task-category {
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+    flex: 1;
+  }
+  
+  /* Task Actions */
+  .task-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .edit-button {
+    color: #7b1984;
+  }
+  
+  .delete-button {
+    color: #e74c3c;
+  }
+  
+  .delete-button:hover {
+    color: #c0392b;
+  }
+  
+  @media (max-width: 768px) {
+    .task-section {
+      margin-bottom: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      position: relative;
+      top: 130px;
+      width: 100%;
+  }
+  }
+ 
