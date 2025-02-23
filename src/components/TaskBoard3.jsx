@@ -58,12 +58,7 @@ const TaskBoardLayout = () => {
     <div  className="Container" >
     <div
   className="row"
-  style={{
-    display: "flex",
-    width: "310px",
-    justifyContent: "space-between",
-    gap: "20px",
-  }}
+ 
 >
         
         <div className="listBoard">

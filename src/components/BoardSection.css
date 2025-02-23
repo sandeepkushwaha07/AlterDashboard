@@ -29,6 +29,7 @@
   ul.board-list.d-flex.row {
     margin-left: 6px;
     padding: 0px;
+    display: block;
 }
   
   /* Board Item (3 columns with equal height & width) */
@@ -107,6 +108,9 @@
     font-size: 14px;
     color: #666;
   }
+  .row{
+    display: flex;
+  }
   
   /* Responsive */
   @media (max-width: 1024px) {
@@ -114,6 +118,17 @@
       flex: 0 calc(50% - 10px);  /* ✅ Two columns for medium screens */
       height: 140px;
     }
+    .row {
+      display: flex !important;
+      width: 268px;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    ul.board-list.d-flex.row {
+      margin-left: 6px;
+      padding: 0px;
+      display: block !important;
+  }
   }
   
   @media (max-width: 768px) {
@@ -121,5 +136,28 @@
       flex: 0 100%;  /* ✅ Single column for small screens */
       height: auto;
     }
+    .row {
+      display: block !important;
+      width: 268px;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    ul.board-list.d-flex.row {
+      margin-left: 6px;
+      padding: 0px;
+      display: block;
   }
+  .search {
+    
+    display: none !important;
+}
+.board-section {
+  
+  top: 21px;
+  width: 281px;
+  
+}
+  }
+  
+  
   
