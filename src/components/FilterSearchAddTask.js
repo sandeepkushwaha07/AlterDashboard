@@ -20,8 +20,7 @@ const FilterSearchAddTask = ({ style }) => {
   // Categories for selection
   const categories = {
     "Task List View": Taskempaty,
-    "Task Section 1": TaskListView,
-    "Task Section 2": TaskListDrop,
+    "Task Section 2": TaskMain1,
     "Task Section 3": TaskListView2,
   };
 

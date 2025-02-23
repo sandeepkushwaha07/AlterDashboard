@@ -6,21 +6,21 @@ import BoardSection from './BoardSection';
 
 const initialTasks = {
   todo: [
-    { id: '1', name: '', date: '', status: '',},
-    { id: '2', name: '', date: '', status: '', },
-    { id: '1', name: '', date: '', status: '',},
+    { id: '1', name: 'No tasks available', date: '', status: '',},
+    { id: '2', name: 'No tasks available', date: '', status: '', },
+    { id: '1', name: 'No tasks available', date: '', status: '',},
    
   ],
   inProgress: [
-    { id: '3', name: '', date: '', status: '' },
-    { id: '3', name: '', date: '', status: '' },
-    { id: '3', name: '', date: '', status: '' },
+    { id: '3', name: 'No tasks available', date: '', status: '' },
+    { id: '3', name: 'No tasks available', date: '', status: '' },
+    { id: '3', name: 'No tasks available', date: '', status: '' },
     
   ],
   completed: [
-    { id: '4', name: '', date: '', status: '',},
-    { id: '4', name: '', date: '', status: '',},
-    { id: '4', name: '', date: '', status: '',},
+    { id: '4', name: 'No tasks available', date: '', status: '',},
+    { id: '4', name: 'No tasks available', date: '', status: '',},
+    { id: '4', name: 'No tasks available', date: '', status: '',},
    
   ],
 };

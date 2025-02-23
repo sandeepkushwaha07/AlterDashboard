@@ -13,12 +13,13 @@ const BoardSection = ({ title, tasks = [], color }) => { // ✅ Default value fo
           tasks.map((task, index) => (
             <li key={index} className="board-item col-md-4"> {/* Responsive grid */}
               <div className="board-info">
-                <span className="board-task-name">{task.name}</span>
-                <span className="board-task-date">{task.date}</span>
-                <span className={`board-task-status ${task.status.toLowerCase()}`}>
-                  {task.status}
-                </span>
-                <span className="board-task-category">{task.category}</span>
+              <span className="board-task-name">{task.name}</span>
+                <div className="task-details d-flex">
+                  <span className="board-task-date">{task.date}</span>
+                  <span className={`board-task-status ${task.status.toLowerCase()}`}>
+                    {task.status}
+                  </span>
+                </div>
               </div>
             </li>
           ))

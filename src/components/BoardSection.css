@@ -31,6 +31,18 @@
     padding: 0px;
     display: block;
 }
+.task-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 102px;
+  top: 30px;
+  position: relative;
+}
+.board-task-date,
+.board-task-status {
+  font-size: 14px; /* Adjust font size */
+}
+
   
   /* Board Item (3 columns with equal height & width) */
   .board-item {
@@ -51,9 +63,12 @@
   .board-item:nth-child(2),
   .board-item:nth-child(3) {
     height: 100px;
-    padding: 19px;
-    margin: 20px; /* ✅ Fixed height for all three */
+    /* padding: 19px; */
+    margin-top: 20px;
+   
   }
+
+
   
   /* Board Info Section */
   .board-info {
@@ -130,10 +145,13 @@
       display: block !important;
   }
   }
+  .dropdownBoard {
+    display: flex;
+}
   
   @media (max-width: 768px) {
     .board-item {
-      flex: 0 100%;  /* ✅ Single column for small screens */
+      flex: 0 100%;  
       height: auto;
     }
     .row {
@@ -142,20 +160,29 @@
       justify-content: space-between;
       gap: 20px;
     }
+    .dropdownBoard {
+      display: block;
+  }
     ul.board-list.d-flex.row {
       margin-left: 6px;
       padding: 0px;
       display: block;
+  }
+  .board-item:nth-child(1),
+  .board-item:nth-child(2),
+  .board-item:nth-child(3) {
+    height: 100px;
+    /* padding: 19px; */
+    margin-top: 20px;
+    width: 332px !important;
   }
   .search {
     
     display: none !important;
 }
 .board-section {
-  
   top: 21px;
-  width: 281px;
-  
+  width: 376px;
 }
   }
   

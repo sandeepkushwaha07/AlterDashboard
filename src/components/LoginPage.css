@@ -119,16 +119,16 @@
   width: 372px;
   height: 361px;
   /* background: rgba(123, 25, 132, 0.2); */
-  top: 283px;
+  top: -174px;
   border: 2px solid #671570;
+  left: 87px;
 }
-
 .login-box {
   position: absolute;
-  top: 52%;
+  top: 50%;
   transform: translateY(-50%);
   left: 32px;
-  width: 267px;
+  width: 324px;
   box-shadow: 4px 4px 35px 10px #e3cfe5;
   padding: 20px;
   background: white;
@@ -188,3 +188,6 @@
 }
  
 }
+
+
+

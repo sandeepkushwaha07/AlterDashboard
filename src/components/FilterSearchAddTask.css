@@ -238,11 +238,11 @@
 }
 
 .add-task-button {
-  padding: 6px 18px;
+  padding: 0px 18px;
   background: #7b1984;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 34px;
   cursor: pointer;
 }
 
