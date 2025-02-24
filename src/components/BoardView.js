@@ -1,5 +1,5 @@
 import React from 'react';
-import './BoardView.css'; // Ensure this file exists
+
 
 const BoardView = () => {
   return (

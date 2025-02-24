@@ -28,7 +28,7 @@ function TaskManagement() {
   };
 
   const handleAddTask = () => {
-    // Logic for adding a task (e.g., show a modal or navigate to task form)
+   
     console.log("Add Task clicked!");
   };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import TaskSection from "./TaskSection";
-import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const tasksTodo = [
   { name: "Task 1", date: "2025-02-21", status: "Pending", category: "Work" },

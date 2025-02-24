@@ -28,7 +28,7 @@ const TaskMain1 = () => {
 
   const categories = ['All', 'Work', 'Personal', 'Office', 'Others'];
 
-  // 📌 Filter tasks by category
+
   const getFilteredTasks = (section) => {
     if (selectedFilter === 'All') return initialTasks[section];
     return initialTasks[section].filter((task) => task.category === selectedFilter);
@@ -36,7 +36,7 @@ const TaskMain1 = () => {
 
   return (
     <div>
-      {/* 🔽 Filter Dropdown */}
+     
       <div style={{ marginBottom: '20px', display: 'none' }}>
         <label>Filter by Category: </label>
         <select value={selectedFilter} onChange={(e) => setSelectedFilter(e.target.value)}>
@@ -46,7 +46,7 @@ const TaskMain1 = () => {
         </select>
       </div>
 
-      {/* ✅ Task Sections */}
+    
       <TaskSection title="To-Do" tasks={getFilteredTasks('todo')} color="#e0b3ff" />
       <TaskSection title="In-Progress" tasks={getFilteredTasks('inProgress')} color="#b3e0ff" />
       <TaskSection title="Completed" tasks={getFilteredTasks('completed')} color="#b3ffb3" />

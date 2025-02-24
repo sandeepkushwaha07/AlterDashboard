@@ -1,4 +1,4 @@
-/* Full-Screen Layout */
+
 .loginpage {
   height: 100vh;
   display: flex;
@@ -72,7 +72,7 @@
   position: absolute;
   /* top: 73px; */
 }
-/* Google Button */
+
 .google-btn {
   padding: 14px 24px;
   font-size: 16px;
@@ -99,7 +99,6 @@
   font-size: 22px;
 }
 
-/* Responsive Design */
 
 /* Mobile */
 @media (max-width: 767px) {
@@ -125,12 +124,12 @@
 }
 .login-box {
   position: absolute;
-  top: 50%;
+  top: 71%;
   transform: translateY(-50%);
   left: 32px;
-  width: 324px;
+  width: 322px;
   box-shadow: 4px 4px 35px 10px #e3cfe5;
-  padding: 20px;
+  padding: 40px;
   background: white;
   border-radius: 8px;
 }
@@ -158,8 +157,6 @@
  
 }
 }
-
-/* Tablet */
 @media (min-width: 768px) {
   .login-box {
     width: 269px;
@@ -174,7 +171,7 @@
 }
 }
 
-/* Desktop */
+
 @media (min-width: 1024px) {
   .login-box {
     position: absolute;

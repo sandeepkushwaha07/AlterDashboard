@@ -40,13 +40,11 @@
 }
 .board-task-date,
 .board-task-status {
-  font-size: 14px; /* Adjust font size */
+  font-size: 14px; 
 }
 
-  
-  /* Board Item (3 columns with equal height & width) */
   .board-item {
-    flex: 0 calc(33.33% - 10px);  /* ✅ Three columns */
+    flex: 0 calc(33.33% - 10px);  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +53,7 @@
     border: 1px solid #ddd;
     background-color: #f9f9f9;
     border-radius: 8px;
-    min-height: 120px; /* ✅ Ensures equal height */
+    min-height: 120px; 
   }
   
   /* Equal height for all items */
@@ -130,7 +128,7 @@
   /* Responsive */
   @media (max-width: 1024px) {
     .board-item {
-      flex: 0 calc(50% - 10px);  /* ✅ Two columns for medium screens */
+      flex: 0 calc(50% - 10px);  
       height: 140px;
     }
     .row {

@@ -4,7 +4,7 @@ import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc"; 
 import "./LoginPage.css";
-import TaskListView from "./TaskListView";
+import TaskMain1 from './TaskMain1'
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -37,7 +37,7 @@ const LoginPage = () => {
             <div className="circle circle2">
             <div className="circle circle3"></div>
            <div className="DatashowLogin">
-           <TaskListView/>
+           <TaskMain1/>
            </div>
             
             </div>

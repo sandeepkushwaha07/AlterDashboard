@@ -1,7 +1,7 @@
 import React from 'react';
 import './TaskSection.css';
 
-const TaskSection = ({ title, tasks = [], color }) => { // ✅ Default value for `tasks`
+const TaskSection = ({ title, tasks = [], color }) => { 
   return (
     <div className="task-section">
       <div className="section-header" style={{ backgroundColor: color }}>
